@@ -1,0 +1,141 @@
+@import 'reset.css';
+
+body {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: gainsboro;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button,
+label {
+    all: unset; /* css속성을 전부 제거 */
+    padding: 10px 0;
+    text-align: center;
+    background-color: royalblue;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity linear .2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+label:hover {
+    opacity: 0.85;
+}
+
+canvas {
+    background-color: white;
+    border-radius: 10px;
+}
+
+body {
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.color-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.color-option {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: transform ease-in-out .3s;
+}
+
+.color-option:hover {
+    transform: scale(1.2);
+}
+
+#line_color {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ratio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratio button {
+    padding: 10px 15px;
+}
+
+#file {
+    display: none;
+}
+
+#text {
+    all: unset; /* css속성을 전부 제거 */
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.text_size {
+    display: flex;
+}
+
+.text_size>span {
+    font-weight: 500;
+    color: black;
+}
+
+.dropbtn {
+    background-color: white;
+    font-weight: 500;
+    color : black;
+    width : 100%;
+    cursor : pointer;
+}
+
+.dropdown-content {
+    all: unset;
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    text-align: center;
+    font-weight: 500;
+    background-color: white;
+    width : 181.5px;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    display : block;
+    text-decoration : none;
+    color : black;
+    font-size: 14px;
+    padding : 12px 20px;
+}
+
+.dropdown-content a:hover {
+    background-color : gainsboro;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="color-options">
+        <input type="color" id="line_color">
+        <div class="color-option" style="background-color: #e74c3c" data-color="#e74c3c"></div>
+        <div class="color-option" style="background-color: #e67e22" data-color="#e67e22"></div>
+        <div class="color-option" style="background-color: #f1c40f" data-color="#f1c40f"></div>
+        <div class="color-option" style="background-color: #2ecc71" data-color="#2ecc71"></div>
+        <div class="color-option" style="background-color: #34495e" data-color="#34495e"></div>
+        <div class="color-option" style="background-color: #9b59b6" data-color="#9b59b6"></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+        <div class="ratio">
+            <button id="ratio1">4:3</button>
+            <button id="ratio2">16:9</button>
+            <button id="ratio3">1:1</button>
+        </div>
+        <input type="range" id="line_width" min="1" max="10" value="5">
+        <button id="mode_btn">Fill</button>
+        <button id="destroy_btn">Destroy</button>
+        <button id="eraser_btn">Eraser</button>
+        <label for="file">
+            Add Photo
+            <input type="file" accept="image/*" id="file"> 
+        </label>
+        <input type="text" placeholder="Add text here..." id="text">
+        <div class="text_size">
+            <span>Size : </span>
+            <input type="range" id="text_size" min="5" max="65" value="40">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">View Fonts</button>
+            <div class="dropdown-content">
+                <a href="#" id="font1">Arial</a>
+                <a href="#" id="font2">italic</a>
+                <a href="#" id="font3">Courier New</a>
+            </div>
+        </div>
+        <button id="save">Save</button>
+    </div>
+</body>
+</html>
